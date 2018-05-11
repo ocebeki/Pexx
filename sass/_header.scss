@@ -1,0 +1,158 @@
+.header {
+    background: url(../img/header-bg.png) center center;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    &__nav {
+        width: 100%;
+        display: inline-flex;
+        text-align: right;
+        border-bottom: solid white 1px;
+        overflow: hidden;
+        position: relative;
+    }
+    &__navLogo {
+        font-family: serif;
+        font-style: italic;
+        width: 25%;
+        p {
+            font-size: 1em;
+        }
+        span {
+            color: red;
+            font-size: 2em;
+            padding-right: 10px;
+        }
+        @media (max-width: 1010px) {
+            width: 30%;
+        }
+        @media (max-width: 1002px) {
+            width: 40%;
+        }
+        @media (max-width: 610px) {
+            width: 70%;
+            font-size: 14px;
+        }
+    }
+    &__navMenu {
+        text-align: right;
+        width: 60%;
+        padding-top: 26px;
+        li {
+            display: inline-block;
+            list-style: none;
+            padding: 20px;
+            padding-top: 0;
+            padding-bottom: 28px;
+            border-bottom: solid 4px transparent;
+            @media (max-width: 1000px) {
+                padding: 10px;
+                padding-bottom: 28px;
+            }
+            &:hover {
+                border-bottom-color: #fff;
+            }
+        }
+        @media (max-width: 1002px) {
+            display: none;
+        }
+    }
+    &__navSearch {
+        position: relative;
+        text-align: left;
+        padding-top: 17px;
+        input {
+            border-radius: 20px;
+            height: 37px;
+            padding-left: 10px;
+        }
+        .fa-search {
+            position: absolute;
+            top: 27px;
+            right: 8%;
+            color: #d1cece;
+            @media (max-width: 1002px) {
+                right: 3%;
+                top: 21px;
+            }
+        }
+        @media (max-width: 1002px) {
+            width: 40%;
+            text-align: right;
+            padding-top: 11px;
+        }
+        @media (max-width: 610px) {
+            display: none;
+        }
+    }
+    &__box {
+        margin-top: 100px;
+        margin-bottom: 220px;
+        width: 46%;
+        padding-left: 10px;
+        text-align: right;
+                @media (max-width: 1002px) {
+            text-align: center;
+                    width: 100%;
+                    margin-top: 50px;
+                    margin-bottom: 150px
+        }
+        button {
+            width: 230px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: #8824cd;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: 0.2s;
+            box-shadow: 0 -1px #fff;
+            &:hover {
+                transform: scale(0.95);
+                transition: 0.2s;
+            }
+        }
+    }
+    &__toggleButton {
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        span {
+            width: 80%;
+            height: 3px;
+            margin: 4px;
+            background: #fff;
+            display: block;
+        }
+        @media (min-width: 1002px) {
+            display: none;
+        }
+    }
+    &__navMenuToggle {
+        display: block;
+        position: absolute;
+        top: 65px;
+        text-align: center;
+        width: 100%;
+        li {
+            padding: 10px;
+        }
+        a {
+            padding-left: 10px;
+            padding-right: 10px;
+            &:hover {
+                border-bottom: solid white 1px;
+            }
+        }
+    }
+    .active {
+        height: 252px;
+    }
+}

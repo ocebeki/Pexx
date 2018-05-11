@@ -1,0 +1,42 @@
+    .content-purple {
+        display: flex;
+        text-align: center;
+        background: url(../img/purple.png) center;
+        background-repeat: no-repeat;
+        padding: 124px 335px;
+        color: #fff;
+    @media (max-width: 1150px) {
+        padding: 100px 100px;
+        }
+            @media (max-width: 750px) {
+        padding: 80px 0px;
+        }
+                    @media (max-width: 450px) {
+        padding: 40px 0px;
+        }
+        h2 {
+            padding: 20px;
+        }
+        p {
+            opacity: 0.7;
+            &:nth-child(4) {
+                opacity: 1;
+            }
+        }
+        button {
+            width: 230px;
+            height: 50px;
+            margin: 18px 0;
+            border-radius: 30px;
+            background-color: #8824cd;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.2s;
+            box-shadow: 0 -1px #fff;
+            &:hover {
+                transform: scale(0.95);
+                transition: 0.2s;
+            }
+        }
+    }

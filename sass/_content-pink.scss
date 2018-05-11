@@ -1,0 +1,39 @@
+    .content-pink {
+    padding: 120px 170px;
+    margin: auto;
+    display: flex;
+    background: url(../img/pink.bg.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+                    @media (max-width: 800px) {
+                padding: 60px 80px;
+    }
+                            @media (max-width: 600px) {
+                padding: 40px 10px;
+    }
+    &__box {
+        padding: 0 194px;
+            @media (max-width: 1200px) {
+                padding: 0;
+    }
+        button {
+            width: 230px;
+            height: 50px;
+            margin-top: 18px;
+            border-radius: 30px;
+            background-color: #fff;
+            border: none;
+            color: #d54c63;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: 0.2s;
+            box-shadow: 0 -1px #fff;
+            &:hover {
+                transform: scale(0.95);
+                transition: 0.2s;
+            }
+        }
+    }
+}
