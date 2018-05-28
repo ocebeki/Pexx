@@ -14,6 +14,7 @@ $(document).ready(function(){
     
     $('.header__toggleButton').click(function(){
         $('.header__nav').toggleClass('active');
+        $('.header__toggleButton span').toggleClass('open');
 
         
     })

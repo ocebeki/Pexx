@@ -29,6 +29,9 @@
                 width: 100%;
                 height: 400px;
             }
+                   @media (max-width: 500px){
+                background-attachment:inherit;
+            }
         }
         h4 {
             padding-bottom: 20px;
