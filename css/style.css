@@ -44,6 +44,9 @@ p {
   line-height: 1.8;
   font-size: 1.2em; }
 
+button {
+  outline: none; }
+
 .header {
   background: url(../img/header-bg.png) center center;
   background-size: cover;
@@ -58,7 +61,15 @@ p {
     text-align: right;
     border-bottom: solid white 1px;
     overflow: hidden;
-    position: relative; }
+    position: fixed;
+    z-index: 100;
+    transition: .5s; }
+    @media (max-width: 1002px) {
+      .header__nav {
+        background: rgba(0, 0, 0, 0.9); } }
+  .header__navFixed {
+    background: rgba(0, 0, 0, 0.9);
+    transition: .5s; }
   .header__navLogo {
     font-family: serif;
     font-style: italic;
@@ -95,7 +106,8 @@ p {
           padding: 10px;
           padding-bottom: 28px; } }
       .header__navMenu li:hover {
-        border-bottom-color: #fff; }
+        border-bottom-color: #fff;
+        cursor: pointer; }
     @media (max-width: 1002px) {
       .header__navMenu {
         display: none; } }
@@ -106,7 +118,8 @@ p {
     .header__navSearch input {
       border-radius: 20px;
       height: 37px;
-      padding-left: 10px; }
+      padding-left: 10px;
+      outline: none; }
     .header__navSearch .fa-search {
       position: absolute;
       top: 27px;
